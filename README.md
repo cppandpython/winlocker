@@ -13,6 +13,8 @@ winlocker — Locks the system and encrypts files
 ## 🚀 Possibilities
 
 - ✅ Locks and encrypts
+- ⚙️ Can be compiled into .exe
+
 
 <br>
 
@@ -50,6 +52,7 @@ winlocker — Блокирует систему и шифрует файлы
 ## 🚀 Возможности
 
 - ✅ Блокирует и шифрует
+- ⚙️ Можно скомпилировать в .exe
 
 <br>
 
