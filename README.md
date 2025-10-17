@@ -8,15 +8,11 @@
 
 winlocker — Locks the system and encrypts files
 
----
-
 <br>
 
 ## 🚀 Possibilities
 
 - ✅ Locks and encrypts
-
----
 
 <br>
 
