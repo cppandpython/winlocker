@@ -1,4 +1,5 @@
 # CREATOR 
+# GitHub https://github.com/cppandpython
 # NAME: Vladislav 
 # SURNAME: Khudash  
 # AGE: 17
@@ -575,6 +576,7 @@ def main():
     else: 
         Thread(target=agent, name='agent').start()
         window()
+
 
 
 main()
