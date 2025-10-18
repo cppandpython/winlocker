@@ -14,7 +14,7 @@ winlocker — Lock the system and encrypt files
 
 ## 🚀 Features
 
-- ✅ Locks and encrypts
+- ✅ Lock and encrypt
 - 📦 Can be compiled into .exe 
 
 
