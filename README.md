@@ -8,7 +8,7 @@
 
 <br>
 
-winlocker — Locks the system and encrypts files
+winlocker — Lock the system and encrypt files
 
 <br>
 
